@@ -1,0 +1,23 @@
+{
+  "bottomNavLinks": [
+    {
+      "label": "careers",
+      "link": "/careers",
+      "id": "662b169969d1183a7895c0d2"
+    },
+    {
+      "label": "locations",
+      "link": "/locations",
+      "id": "662b173269d1183a7895c0d3"
+    },
+    {
+      "label": "contact",
+      "link": "/contact",
+      "id": "662b173469d1183a7895c0d4"
+    }
+  ],
+  "globalType": "footer",
+  "createdAt": "2024-04-26T02:51:14.034Z",
+  "updatedAt": "2024-04-26T02:53:50.707Z",
+  "id": "662b16a2c72547c07ce1294f"
+}

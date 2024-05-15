@@ -1,0 +1,49 @@
+{
+  "logo": {
+    "id": "6643c2a8863ff4a92e02fcf4",
+    "alt": "logo_5",
+    "filename": "sw_logo_set_005.png",
+    "mimeType": "image/png",
+    "filesize": 52833,
+    "width": 3000,
+    "height": 750,
+    "createdAt": "2024-05-14T19:59:36.881Z",
+    "updatedAt": "2024-05-14T19:59:36.881Z",
+    "url": "http://localhost:4001/media/sw_logo_set_005.png"
+  },
+  "navLinks": [
+    {
+      "label": "Locations",
+      "link": "/locations",
+      "id": "662028de9c720a279a6f1c24"
+    },
+    {
+      "label": "Products",
+      "link": "/products",
+      "id": "662028eb9c720a279a6f1c25"
+    },
+    {
+      "label": "Order Online",
+      "link": "/shop",
+      "id": "662028f39c720a279a6f1c26"
+    }
+  ],
+  "globalType": "header",
+  "createdAt": "2024-04-17T19:52:04.719Z",
+  "updatedAt": "2024-05-14T20:35:33.333Z",
+  "instagram_logo": {
+    "id": "6643caed863ff4a92e02fdbf",
+    "alt": "instagram",
+    "filename": "insta_sand.png",
+    "mimeType": "image/png",
+    "filesize": 4198,
+    "width": 400,
+    "height": 400,
+    "createdAt": "2024-05-14T20:34:53.653Z",
+    "updatedAt": "2024-05-14T20:34:53.653Z",
+    "url": "http://localhost:4001/media/insta_sand.png"
+  },
+  "logolink": "/",
+  "instagram_link": "https://www.instagram.com/southwest.nm/",
+  "id": "6620286434363c51d42500de"
+}
