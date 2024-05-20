@@ -12,6 +12,7 @@ import About from './About';
 import ImageWithText from './ImageWithText';
 import Values from './Values';
 import VerticalBlocks from './VerticalBlocks';
+import Locations from './Locations';
 
 export const blocks = {
     "hero" : Hero,
@@ -27,5 +28,6 @@ export const blocks = {
     "about":About,
     "imagewithtext":ImageWithText,
     "values":Values,
-    "verticalblocks":VerticalBlocks
+    "verticalblocks":VerticalBlocks,
+    "locations":Locations
 }

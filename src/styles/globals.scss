@@ -522,3 +522,56 @@ padding:25px;
   padding-left:10px;
   margin-bottom:20px;
 }
+
+a.sw_footer_location_address {
+  color:$sw-sand;
+}
+a.sw_footer_location_button {
+  color:$sw-sand;
+}
+.sw_footer_hours {
+  color:$sw-sand;
+}
+
+.location_view_wrap {
+  width:100%;
+  padding-top:75px;
+  padding-bottom:75px;
+}
+
+.location_view_inner {
+  width:100%;
+  max-width:1200px;
+  margin:auto;
+  text-align:center;
+}
+.location_name {
+  font-size:48px;
+  color:$sw-black; 
+}
+
+.location_hours {
+  color:$sw-black;
+  display:flex;
+  flex-direction:column;
+}
+
+.location_hours_line {
+  color:$sw-black;
+}
+
+.location_map {
+  width:100%;
+  padding-top:50%;
+  position:relative;
+  margin-top:25px;
+}
+
+.location_map_inner {
+  position:absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  background:red;
+}

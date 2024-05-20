@@ -24,13 +24,10 @@ export default function Footer() {
                             </div>
                             <div className="sw_footer_location_place">
                                 <div className="sw_footer_location_address">1033 Paseo Del Pueblo Sur</div>
-                                <div className="sw_footer_location_address">575-770-3639</div>
-                                <div className="sw_footer_locaiton_button">MAP</div>
-                            </div>
-                            <div className="sw_footer_location_place">
-                                <div className="sw_footer_location_address">970 Paseo Del Pueblo Sur</div>
-                                <div className="sw_footer_location_address">575-770-3639</div>
-                                <div className="sw_footer_locaiton_button">MAP</div>
+                                <div className="sw_footer_hours">Mon - Sat | 9am - 8pm</div>
+                                <div className="sw_footer_hours">Sun | 11am - 6pm</div>
+                                <a className="sw_footer_location_address" href="tel:5757703639">575-224-3254</a>
+                                <div><Link className="sw_footer_location_button" href="/locations?store=taos">MAP</Link></div>
                             </div>
 
                         </div>
@@ -39,14 +36,24 @@ export default function Footer() {
                                 ESPANOLA
                             </div>
                             <div className="sw_footer_location_place">
-                                <div className="sw_footer_location_address">1033 Paseo Del Pueblo Sur</div>
-                                <div className="sw_footer_location_address">575-770-3639</div>
-                                <div className="sw_footer_locaiton_button">MAP</div>
+                                <div className="sw_footer_location_address">1205 N. Riverside Drive</div>
+                                <div className="sw_footer_hours">Mon | 9am - 8pm</div>
+                                <div className="sw_footer_hours">Tue - Thu | 9am - 7pm</div>
+                                <div className="sw_footer_hours">Fri | 9am - 8pm</div>
+                                <div className="sw_footer_hours">Sat | 10am - 7pm</div>
+                                <div className="sw_footer_hours">Sun | 10am - 6pm</div>
+                                <a className="sw_footer_location_address" href="tel:5057472908">505-747-2908</a>
+                                <div><Link className="sw_footer_location_button" href="/locations?store=espanolanorth">MAP</Link></div>
                             </div>
                             <div className="sw_footer_location_place">
-                                <div className="sw_footer_location_address">970 Paseo Del Pueblo Sur</div>
-                                <div className="sw_footer_location_address">575-770-3639</div>
-                                <div className="sw_footer_locaiton_button">MAP</div>
+                                <div className="sw_footer_location_address">421 S. Riverside Drive</div>
+                                <div className="sw_footer_hours">Mon | 9am - 8pm</div>
+                                <div className="sw_footer_hours">Tue - Thu | 9am - 7pm</div>
+                                <div className="sw_footer_hours">Fri | 9am - 8pm</div>
+                                <div className="sw_footer_hours">Sat | 10am - 7pm</div>
+                                <div className="sw_footer_hours">Sun | 10am - 6pm</div>
+                                <a className="sw_footer_location_address" href="tel:5057472644">505-747-2644</a>
+                                <div><Link className="sw_footer_location_button" href="/locations?store=espanolasouth">MAP</Link></div>
                             </div>
 
                         </div>
@@ -55,14 +62,25 @@ export default function Footer() {
                                 SANTA FE
                             </div>
                             <div className="sw_footer_location_place">
-                                <div className="sw_footer_location_address">1033 Paseo Del Pueblo Sur</div>
-                                <div className="sw_footer_location_address">575-770-3639</div>
-                                <div className="sw_footer_locaiton_button">MAP</div>
+                                <div className="sw_footer_location_address">1899 Cerillos Rd.</div>
+                                <div className="sw_footer_hours">Mon - Sat | 9am - 8pm</div>
+                                <div className="sw_footer_hours">Sun | 10am - 6pm</div>
+                                <a className="sw_footer_location_address" href="tel:5053727046">505-372-7046</a>
+                                <div><Link className="sw_footer_location_button" href="/locations?store=sfcerillos">MAP</Link></div>
                             </div>
                             <div className="sw_footer_location_place">
-                                <div className="sw_footer_location_address">970 Paseo Del Pueblo Sur</div>
-                                <div className="sw_footer_location_address">575-770-3639</div>
-                                <div className="sw_footer_locaiton_button">MAP</div>
+                                <div className="sw_footer_location_address">604 N. Guadalupe</div>
+                                <div className="sw_footer_hours">Mon - Sat | 9am - 8pm</div>
+                                <div className="sw_footer_hours">Sun | 9am - 6pm</div>
+                                <a className="sw_footer_location_address" href="tel:5057808764">505-780-8764</a>
+                                <div><Link className="sw_footer_location_button" href="/locations?store=sfguad">MAP</Link></div>
+                            </div>
+                            <div className="sw_footer_location_place">
+                                <div className="sw_footer_location_address">507 Old Santa Fe Trail</div>
+                                <div className="sw_footer_hours">Mon - Sat | 9am - 6pm</div>
+                                <div className="sw_footer_hours">Sun | Closed</div>
+                                <a className="sw_footer_location_address" href="tel:5057805391">505-780-5391</a>
+                                <div><Link className="sw_footer_location_button" href="/locations?store=sfoldsantafetrail">MAP</Link></div>
                             </div>
 
                         </div>
@@ -71,14 +89,21 @@ export default function Footer() {
                                 ALBUQUERQUE
                             </div>
                             <div className="sw_footer_location_place">
-                                <div className="sw_footer_location_address">1033 Paseo Del Pueblo Sur</div>
-                                <div className="sw_footer_location_address">575-770-3639</div>
-                                <div className="sw_footer_locaiton_button">MAP</div>
+                                <div className="sw_footer_location_address">9132 Montgomery Blvd.</div>
+                                <div className="sw_footer_hours">Mon | 10am - 7pm</div>
+                                <div className="sw_footer_hours">Tue - Wed | 10am - 6pm</div>
+                                <div className="sw_footer_hours">Thu - Sat | 10am - 7pm</div>
+                                <div className="sw_footer_hours">Sun | Closed</div>
+                                <a className="sw_footer_location_address" href="tel:5054048885">505-404-8885</a>
+                                <div><Link className="sw_footer_location_button" href="/locations?store=abqmontgomery">MAP</Link></div>
                             </div>
                             <div className="sw_footer_location_place">
-                                <div className="sw_footer_location_address">970 Paseo Del Pueblo Sur</div>
-                                <div className="sw_footer_location_address">575-770-3639</div>
-                                <div className="sw_footer_locaiton_button">MAP</div>
+                                <div className="sw_footer_location_address">101 98th St SW</div>
+                                <div className="sw_footer_hours">Mon - Fri | 9am - 8pm</div>
+                                <div className="sw_footer_hours">Sat | 10am - 8pm</div>
+                                <div className="sw_footer_hours">Sun | 10am - 7pm</div>
+                                <a className="sw_footer_location_address" href="tel:5054334174">505-433-4174</a>
+                                <div><Link className="sw_footer_location_button" href="/locations?store=abq98th">MAP</Link></div>
                             </div>
 
                         </div>
