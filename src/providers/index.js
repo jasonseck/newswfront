@@ -19,7 +19,12 @@ export const AppProvider = ({ children }) => {
             location: {
                 lat: 36.38373617626738, 
                 long: -105.58640403253914
-            }
+            },
+            hours : [
+                "Mon - Sat | 9am - 8pm",
+                "Sun | 11am - 6pm"
+            ],
+            tel : "575-224-3254"
         },
         {
             name:"Espanola - N. Riverside",
@@ -31,7 +36,16 @@ export const AppProvider = ({ children }) => {
             location: {
                 lat:36.00843893221038,
                 long:-106.06462839614142
-            }
+            },
+            hours : [
+                "Mon | 9am - 8pm",
+                "Tue - Thu | 9am - 7pm",
+                "Fri | 9am - 8pm",
+                "Sat | 10am - 7pm",
+                "Sun | 10am - 6pm"
+
+            ],
+            tel:"505-747-2908"
         },
 
         {
@@ -44,7 +58,15 @@ export const AppProvider = ({ children }) => {
             location: {
                 lat:35.98903947885728,
                 long:-106.06509450012506
-            }
+            },
+            hours : [
+                "Mon | 9am - 8pm",
+                "Tue - Thu | 9am - 7pm",
+                "Fri | 9am - 8pm",
+                "Sat | 10am - 7pm",
+                "Sun | 10am - 6pm"
+            ],
+            tel:"505-747-2644"
         },
         {
             name:"Santa Fe - Cerillos",
@@ -56,7 +78,12 @@ export const AppProvider = ({ children }) => {
             location: {
                 lat:35.66516659849491,
                 long:-105.97310497801428
-            }
+            },
+            hours : [
+                "Mon - Sat | 9am - 8pm",
+                "Sun | 10am - 6pm"
+            ],
+            tel:"505-372-7046"
         },
         {
             name:"Santa Fe - Old Santa Fe Trail",
@@ -68,7 +95,12 @@ export const AppProvider = ({ children }) => {
             location : {
                 lat:35.68109833308655,
                 long:-105.93751140319796
-            }
+            },
+            hours : [
+                "Mon - Sat | 9am - 6pm",
+                "Sun | Closed"
+            ],
+            tel:"505-780-5391"
         },
         {
             name:"Santa Fe - Guadalupe & Sabino",
@@ -80,7 +112,12 @@ export const AppProvider = ({ children }) => {
             location : {
                 lat:35.69496440507486,
                 long:-105.95094557826191
-            } 
+            } ,
+            hours : [
+                "Mon - Sat | 9am - 8pm",
+                "Sun | 9am - 6pm"
+            ],
+            tel:"505-780-8764"
         },
         {
             name:"Albuquerque 98th",
@@ -92,7 +129,13 @@ export const AppProvider = ({ children }) => {
             location: {
                 lat:35.073227821038785,
                 long:-106.743252129912
-            }, 
+            },
+            hours : [
+                "Mon - Fri | 9am - 8pm",
+                "Sat | 10am - 8pm",
+                "Sun | 10am - 7pm"
+            ],
+            tel:"505-433-4174"
         },
         {
             name:"Albuquerque Montgomery & Eubank",
@@ -104,7 +147,14 @@ export const AppProvider = ({ children }) => {
             location: {
                 lat:35.130310244536545,
                 long:-106.54097653101272
-            }
+            },
+            hours : [
+                "Mon | 10am - 7pm",
+                "Tue - Wed | 10am - 6pm",
+                "Thu - Sat | 10am - 7pm",
+                "Sun | Closed"
+            ],
+            tel:"505-404-8885"
         }
 
 

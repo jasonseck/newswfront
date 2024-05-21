@@ -17,8 +17,8 @@ export default function Header() {
         const header = document.querySelector('.header_wrap');
         const vpanel = document.querySelector('.video_panel_wrap')
         const scrollTop = window.scrollY;
-        scrollTop >= 58 ? header.classList.add('hw_fixed') : header.classList.remove('hw_fixed');
-        scrollTop >= 58 ? vpanel.classList.add('hw_fixedv') : vpanel.classList.remove('hw_fixedv');
+        scrollTop >= 58 ? header?.classList?.add('hw_fixed') : header?.classList?.remove('hw_fixed');
+        scrollTop >= 58 ? vpanel?.classList?.add('hw_fixedv') : vpanel?.classList?.remove('hw_fixedv');
     };
     return (
         <div className='header_wrap container'>

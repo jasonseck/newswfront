@@ -573,5 +573,44 @@ a.sw_footer_location_button {
   left:0;
   bottom:0;
   right:0;
-  background:red;
+  background:white;
+}
+
+.ll_name {
+  color:$sw-black;
+  font-size:48px;
+}
+.location_list_wrap {
+  width:100%;
+  max-width:1000px;
+  margin:auto;
+}
+.ll_wrap {
+  text-align: center;
+  padding-top:25px;
+  padding-bottom:25px;
+  border-bottom:1px solid $sw-black;
+}
+.ll_hours {
+  margin-top:15px;
+}
+.ll_hour_line {
+
+}
+
+.ll_phone {
+  margin-top:15px;
+}
+
+.ll_phone > a {
+  color:$sw_black;
+}
+
+.ll_button {
+  background:$sw-black;
+  display:inline-block;
+  padding:10px 12px 10px 12px;
+  color:$sw-sand;
+  line-height:1;
+  margin-top:15px;
 }
