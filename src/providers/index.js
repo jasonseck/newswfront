@@ -178,8 +178,42 @@ export const AppProvider = ({ children }) => {
     const closelist = () => {
         toggleList(false)
     }
+    // const [agecheck,setagecheck] = useState(false);
+    // const ageverified = (agecheck) => {
+    //     setagecheck(true)
+    // }
+    const [agecheck, setAgeCheck] = useState(false);
+    const setagecheck = () => {
+        setAgeCheck(true)
+    }
+    const [agedeclined, setAgeDeclined] = useState(false);
+    const setagedeclined = () => {
+        setAgeDeclined(true)
+    }
+    const [showsignup, SetSignup] = useState(false);
+    const setsignup = (e) => {
+        SetSignup(e)
+    }
+
+    
     return (
-        <AppContext.Provider value={{ location, setlocation, clearlocation, locationlist, listopen,togglelist,listopen, openlist, closelist }}>
+        <AppContext.Provider value={{
+            location,
+            setlocation,
+            clearlocation,
+            locationlist,
+            listopen,
+            togglelist,
+            listopen,
+            openlist,
+            closelist,
+            agecheck,
+            setagecheck,
+            agedeclined,
+            setagedeclined,
+            showsignup,
+            setsignup
+            }}>
             {children}
         </AppContext.Provider>
     );
