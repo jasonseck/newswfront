@@ -6,7 +6,7 @@ import {useSearchParams} from 'next/navigation';
 import LocationView from './LocationView';
 import AppContext from '@/providers';
 import Link from 'next/link';
-
+import { useRouter } from 'next/router';
 const lmap = [
     "taos",
     "espanolanorth",
@@ -20,6 +20,8 @@ const lmap = [
 
 
 export default function LocationListItem(props) {
+    const { location, setlocation, clearlocation, locationlist,listopen, togglelist, openlist, closelist } = useContext(AppContext);
+    const router = useRouter();
     const l = props.place
     console.log('from the component')
     return (
@@ -46,8 +48,11 @@ export default function LocationListItem(props) {
             <div className="ll_phone">
                 <a href={"tel:"+l.tel}>{l.tel}</a>
             </div>
-            <div className="ll_button">
-            <Link className="sw_footer_location_button" href={"/locations?store="+props.slug}>MAP & SHOP</Link>
+            <div className="ll_button" onClick={()=>{
+                setlocation(l);
+                router.push("/locations?store="+props.slug)
+            }}>
+            MAP & SHOP
             </div>
         </div>
     )

@@ -6,7 +6,7 @@ import {useSearchParams} from 'next/navigation';
 import AppContext from '@/providers';
 import Map, { Marker, Popup, NavigationControl, GeolocateControl } from "react-map-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
-
+import logo from '@/img/Leaflylogo3.png'
 
 const lmap = [
     "taos",
@@ -21,7 +21,7 @@ const lmap = [
 
 export default function LocationView(props) {
     const {place} = props;
-
+    console.log('THE LOGO',logo)
     useEffect(()=>{
     mapRef?.current?.flyTo({ center: [place.location.long, place.location.lat], zoom: 16 });
     },[props])
@@ -55,7 +55,13 @@ export default function LocationView(props) {
                         initialViewState={{ latitude: place?.location?.lat, longitude: place?.location?.long, zoom: 16 }}
                         maxZoom={20}
                         minZoom={3}
-    			    />
+                        scrollZoom={false}
+    			    >
+                        						<Marker key={1} longitude={place.location.long} latitude={place.location.lat}>
+								<img src={logo.src} style={{width:45}}/>
+						</Marker>
+
+                        </Map>
                     </div>
                 </div>
                 <div className="location_leafly_wrap">

@@ -46,60 +46,6 @@
     font-size:14px;
     text-transform: uppercase;
 }
-.hero_panel_wrap {
-
-}
-
-.hero_panel_inner {
-    width:100%;
-    padding-top:50%;
-    position:relative;
-}
-.hero_panel_content_container {
-    position:absolute;
-    top:0;
-    left:0;
-    bottom:0;
-    right:0;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.hero_panel_content_wrap {
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items:flex-start;
-    width:100%;
-    height:100%;
-    padding:70px 90px;
-}
-.hero_panel_preheader {
-    color:white;
-    text-transform: uppercase;
-    margin-bottom:.5em;
-}
-.hero_panel_header {
-    color:white;
-    margin:0;
-    font-size:56px;
-    line-height: 1.1;
-    font-weight:300;
-    margin-bottom:20px;
-}
-.hero_panel_subtext {
-    color:white;
-    margin-bottom:2px;
-}
-.hero_panel_button {
-    margin-top:30px;
-}
-.hero_button_inner {
-    padding:18px 28px;
-    background:white;
-    border-radius:4px;
-}
 
 
 .video_panel_wrap {

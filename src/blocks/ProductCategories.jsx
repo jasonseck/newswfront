@@ -76,6 +76,7 @@ export default function ProductCategories({header,description,productcategory,ma
 				initialViewState={{ latitude: location.location.lat, longitude: location.location.long, zoom: 16 }}
 				maxZoom={20}
 				minZoom={3}
+                scrollZoom={false}
 			>
                 {locationlist.map((l,i)=>{
                     return (
