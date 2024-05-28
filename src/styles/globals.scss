@@ -6,7 +6,7 @@
   font-style: normal;
   font-display: swap;
 }
-
+$vault : 'Vault Alarm';
 $slate-50: #f8fafc;
 $slate-100: #f1f5f9;
 $slate-200: #e2e8f0;
@@ -762,12 +762,14 @@ a.sw_footer_location_button {
   bottom:0;
   display:flex;
   justify-content: center;
+ // backdrop-filter: blur(10px);
+
 }
 .rewardsignup_inner {
   width:100%;
   height:100%;
   position:relative;
-}
+} 
 .rs_box {
   background:$sw-sand;
   position:relative;
@@ -780,10 +782,16 @@ a.sw_footer_location_button {
   display:flex;
   flex-direction:column;
   align-items: center;
+  width:400px;
 }
 
 .rs_title {
-  font-size:36px;
+  font-size:54px;
+}
+
+.rs_more {
+  font-size:24px;
+  text-align:center;
 }
 
 .dd_red {
@@ -797,14 +805,33 @@ a.sw_footer_location_button {
 }
 .rs_signup_row {
   display:flex;
+  margin-bottom:5px;
+
 }
 .rs_signup_row > input {
   flex:1;
-  margin-right:10px;
+  margin-right:5px;
+  height:22px;
+  padding:4px;
 }
 
 .rs_signup_close {
   position:absolute;
   top:10px;
   right:10px;
+  cursor:pointer;
+}
+
+.rs_button {
+  background:$sw-black;
+  color:$sw-sand;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 4px;
+  cursor:pointer;
+  font-family:$vault;
 }
