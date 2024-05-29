@@ -4,7 +4,7 @@ import React, {useContext, useRef, useEffect} from 'react';
 import AppContext from '@/providers';
 import Map, { Marker, Popup, NavigationControl, GeolocateControl } from "react-map-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
-
+import Link from 'next/link';
 export default function ProductCategories({header,description,productcategory,mapimage}) {
     function usePrevious(value) {
         const ref = useRef();
@@ -57,7 +57,7 @@ export default function ProductCategories({header,description,productcategory,ma
 
                         </div>
                         <div className="iwt_text_button_wrap">
-                        <a href={location.link} className="product_text_button vault" target="_blank">Shop</a>
+                        <Link href={"/locations?store="+location.slug} className="product_text_button vault">Shop</Link>
 
                         </div>
 
