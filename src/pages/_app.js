@@ -21,6 +21,8 @@ import SideNews from "./SideNews";
 export default function App({ Component, pageProps }) {
   return (
     <div style={{padding:0}}>
+      <div className="mobile_message">not mobile ready. please view on desktop</div>
+      <div className="mobile_gate">
       <Head>
         <title>Southwest Cannabis</title>
       </Head>
@@ -29,6 +31,7 @@ export default function App({ Component, pageProps }) {
       <RewardsSignup/>
       <SideNews/>
     </AppProvider>
+    </div>
     </div>
   )
 }
