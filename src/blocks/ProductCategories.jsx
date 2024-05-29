@@ -53,7 +53,11 @@ export default function ProductCategories({header,description,productcategory,ma
                         <div className="pc_store_name">You are shopping <b>{location.name}</b></div>
                         <div className="pc_store_name">{location.address}, {location.city} {location.zip}</div>
                         <div className="iwt_text_button_wrap">
-                        <div onClick={()=>{openlist()}} className="product_text_button">change location</div>
+                        <div onClick={()=>{openlist()}} className="product_text_button vault">change location</div>
+
+                        </div>
+                        <div className="iwt_text_button_wrap">
+                        <a href={location.link} className="product_text_button vault" target="_blank">Shop</a>
 
                         </div>
 

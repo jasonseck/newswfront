@@ -293,71 +293,6 @@ padding:20px;
     text-transform: uppercase;
 }
 
-.signup_wrap {
-    width:100%;
-}
-
-.signup_inner {
-    width:100%;
-    padding-top:50px;
-    padding-bottom:75px;
-    text-align: center;
-    color:white;
-}
-
-
-.signup_text {
-    margin-bottom:10px;
-}
-.signup_heading {
-    font-size:80px;
-    font-weight:bold;
-    text-transform:uppercase;
-}
-.signup_body {
-    font-size:14px;
-}
-
-.signup_form {
-    display:flex;
-    flex-direction:row;
-    justify-content: center;
-}
-.signup_form_inner {
-    width:100%;
-    max-width:400px;
-    display:flex;
-    flex-direction:row;
-    align-items: center;
-}
-.signup_input {
-    flex:1;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-}
-.signup_input > input {
- flex:1;
- height:40px;
-}
-
-.signup_button {
-    background:#182028;
-    color:white;
-    height:46px;
-    padding-left:8px;
-    padding-right:8px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    cursor:pointer;
-}
-
-.signup_body_text {
-    max-width:400px;
-    margin:auto;
-    margin-top:15px;
-}
 .about_panel_inner {
     width:100%;
     display:flex;
@@ -433,7 +368,3 @@ padding:20px;
     margin-bottom:36px;
 }
 
-.iwt_text_button_wrap {
-    margin-top:32px;
-
-}

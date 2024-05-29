@@ -1,12 +1,14 @@
-import React, {useContext, useEffect} from 'react';
+import React, {useContext, useRef, useEffect} from 'react';
+import AppContext from '@/providers';
 import header from '@/globalData/header.json';
 import Image from 'next/image';
 import Link from 'next/link'
-import AppContext from '@/providers';
 import Locations from './locations';
 
 
 export default function Header() {
+    const { location, setlocation, clearlocation, locationlist,openlist,closelist } = useContext(AppContext);
+
     useEffect(() => {
         window.addEventListener('scroll', isSticky);
         return () => {
@@ -43,13 +45,26 @@ export default function Header() {
                     </div>
                     <div className="header_bottom">
                         <ul className="header_links">
-                            {header.navLinks.map((link)=>{
+                            <li  className="header_link">
+                                <Link href="/locations">LOCATIONS</Link>
+                            </li>
+                            <li  className="header_link">
+                                <Link href="/deals">DEALS</Link>
+                            </li>
+                            <li className="header_link">
+                                <Link href="/loyalty">REWARDS</Link>
+                            </li>
+                            <li  className="header_link">
+                                <Link href={location.link} target="_blank">ORDER ONLINE</Link>
+                            </li>
+
+                            {/* {header.navLinks.map((link)=>{
                                 return (
                                     <li key={link.id} className="header_link">
                                          <Link href={link.link}>{link.label}</Link>
                                     </li>
                                 )
-                            })}
+                            })} */}
                         </ul>
                     </div>
             </div>

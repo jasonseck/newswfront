@@ -1,11 +1,18 @@
-import React from 'react';
+import React, {useContext, useRef, useEffect} from 'react';
+import AppContext from '@/providers';
+
 import Link from 'next/link';
 export default function Values({values,showbutton,buttontext,buttonlink}) {
     console.log("JUSTIFY",values)
+    const { location, setlocation, clearlocation, locationlist,openlist,closelist } = useContext(AppContext);
+
     return (
         <div className="values_panel_wrap container">
             <div className="values_inner">
                 <div className="values_header vault">NEW MEXICO'S FINEST</div>
+                <div className="about_panel_body" style={{textAlign:'center',maxWidth:750,margin:'auto'}}>
+                Founded over a decade ago, Southwest Cannabis has long been a pioneering force in New Mexico's cannabis industry. With a focus on quality, integrity, and community, Southwest Cannabis remains committed to providing “seed to sale” cannabis products while advocating for social equity and responsible consumption.
+                </div>
                 <div className="values_row">
                     {values.map(v=>{
                         return (
@@ -22,7 +29,7 @@ export default function Values({values,showbutton,buttontext,buttonlink}) {
                 {showbutton &&
                     <div className="values_button_row">
                         <div className="sw_button_solid">
-                         <Link href={buttonlink} className="vault">{buttontext}</Link>
+                         <Link href={location.link} className="vault" target="_blank">{buttontext}</Link>
                         </div>
                     </div>
                 }

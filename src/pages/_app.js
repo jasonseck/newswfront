@@ -15,8 +15,9 @@ axios.defaults.baseURL = process.env.NEXT_PUBLIC_BACKEND_URL;
 axios.defaults.headers.post["Content-Type"] = "application/json";
 axios.defaults.headers.patch["Content-Type"] = "application/json";
 axios.defaults.withCredentials = true;
-import RewardsSignup from "./rewardssignup";
+import RewardsSignup from "./rewardssignup2";
 import Inside from "./inside";
+import SideNews from "./SideNews";
 export default function App({ Component, pageProps }) {
   return (
     <div style={{padding:0}}>
@@ -26,6 +27,7 @@ export default function App({ Component, pageProps }) {
     <AppProvider>
       <Inside Component={Component} pageProps={pageProps}/>
       <RewardsSignup/>
+      <SideNews/>
     </AppProvider>
     </div>
   )

@@ -762,7 +762,7 @@ a.sw_footer_location_button {
   bottom:0;
   display:flex;
   justify-content: center;
- // backdrop-filter: blur(10px);
+ backdrop-filter: blur(10px);
 
 }
 .rewardsignup_inner {
@@ -785,6 +785,52 @@ a.sw_footer_location_button {
   width:400px;
 }
 
+.rs_box2 {
+  background:#050505;
+  position:relative;
+  top:160px;
+  left:50%;
+  transform:translateX(-50%);
+  border-radius:4px;
+  z-index:99999999;
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  width:800px;
+  overflow:hidden;
+}
+.rs_box_top {
+  color:$sw-red;
+  text-align:center;
+}
+.rs_box_top_title {
+  font-size: 66px;
+  line-height:1;
+}
+.rs_box_top_sub {
+  font-size:42px;
+  line-height:1;
+}
+
+.rs_box_top > img {
+  width:100%;
+}
+.rs_box_left {
+  flex:1;
+
+}
+.rs_box_right {
+  flex:1;
+}
+
+.rs_box_bottom {
+  display:flex;
+  flex-direction:row;
+  margin-top:15px;
+  padding-top:15px;
+  padding-bottom:25px;
+  border-top:1px solid $sw-sand;
+}
 .rs_title {
   font-size:54px;
 }
@@ -801,7 +847,7 @@ a.sw_footer_location_button {
 .rs_email_signup {
   display:flex;
   flex-direction:column;
-  margin-top:15px;
+  margin-bottom:15px;
 }
 .rs_signup_row {
   display:flex;
@@ -814,7 +860,10 @@ a.sw_footer_location_button {
   height:22px;
   padding:4px;
 }
-
+.rs_signup_text {
+  color:$sw-red;
+  font-size:22px;
+}
 .rs_signup_close {
   position:absolute;
   top:10px;
@@ -834,4 +883,192 @@ a.sw_footer_location_button {
   border-radius: 4px;
   cursor:pointer;
   font-family:$vault;
+}
+
+.rs_left_image {
+  width:100%;
+  display:block;
+}
+
+.sidenews_wrapper {
+  position:fixed;
+  bottom:5%;
+  left:5%;
+  width:300px;
+}
+
+.sidenews_inner {
+  width:100%;
+}
+.sidenews_inner > a > img {
+  width:100%;
+}
+
+.dm_inner {
+  
+  width:100%;
+  max-width:1000px;
+  margin:auto;
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  padding-bottom:75px;
+}
+
+.dm_top_header {
+//  margin-top:25px;
+background: $sw-black;
+padding-top:20px;
+padding-bottom:50px;
+text-align:center;
+margin-bottom:50px;
+border-bottom:.5px solid $sw-black;
+}
+.dm_top_header > img {
+  width:300px;
+}
+.dm_top_title {
+  font-size:48px;
+}
+
+.dm_section {
+  width:100%;
+  text-align:left;
+  margin-bottom:15px;
+}
+.dm_header {
+  font-size:36px;
+  margin-bottom:10px;
+}
+.dm_group {
+  display:flex;
+  flex-direction:row;
+  justify-content: flex-start;
+  color:$sw-black;
+  font-size:18px;
+  align-items: center;
+  margin-bottom:6px;
+}
+
+.dm_line_title {
+  font-weight:bold;
+  background:$sw-yellow;
+  padding:4px;
+  margin-right:3px;
+}
+.dm_line_title_ed {
+  font-weight:bold;
+  background:$sw-red;
+  padding:4px;
+  margin-right:3px;
+  color:$sw-sand;
+}
+
+.dm_specs_wrap {
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content: space-between;
+}
+.dm_specs_item {
+  width:30%;
+}
+.dm_specs_item > img {
+  width:100%;
+}
+.iwt_text_button_wrap {
+  margin-top:8px;
+
+}
+
+
+.signup_wrap {
+  width:100%;
+  background:$sw-yellow;
+}
+
+.signup_inner {
+  width:100%;
+  padding-top:50px;
+  padding-bottom:75px;
+  text-align: center;
+  color:white;
+}
+
+
+.signup_text {
+  margin-bottom:10px;
+}
+.signup_heading {
+  font-size:80px;
+  font-weight:bold;
+  text-transform:uppercase;
+}
+.signup_body {
+  font-size:14px;
+}
+
+.signup_form {
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
+}
+.signup_form_inner {
+  width:100%;
+  max-width:400px;
+  display:flex;
+  flex-direction:row;
+  align-items: center;
+}
+.signup_input {
+  flex:1;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.signup_input > input {
+flex:1;
+height:40px;
+}
+
+.signup_button {
+  background:#182028;
+  color:white;
+  height:46px;
+  padding-left:8px;
+  padding-right:8px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  cursor:pointer;
+}
+
+.signup_body_text {
+  max-width:400px;
+  margin:auto;
+  margin-top:15px;
+  color:$sw-red;
+}
+
+.signup_text_title {
+  font-size:48px;
+  text-transform:uppercase;
+  line-height:1.1;
+  color:$sw-sand;
+}
+.sw_footer_location_address > a {
+  color:$sw-sand;
+  text-decoration:none;
+}
+
+.sw_footer_location_address > a:hover {
+  text-decoration:underline;
+}
+
+.faq_inner {
+  width:100%;
+  text-align:center;
+  font-size:36px;
+  padding-top:75px;
+  padding-bottom:75px;
 }

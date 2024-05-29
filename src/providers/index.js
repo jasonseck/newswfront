@@ -195,6 +195,11 @@ export const AppProvider = ({ children }) => {
         SetSignup(e)
     }
 
+    const [sidenews, SetSideNews] = useState(true);
+    const setsidenews = (e) => {
+        SetSideNews(e)
+    }
+
     
     return (
         <AppContext.Provider value={{
@@ -212,7 +217,9 @@ export const AppProvider = ({ children }) => {
             agedeclined,
             setagedeclined,
             showsignup,
-            setsignup
+            setsignup,
+            sidenews,
+            setsidenews
             }}>
             {children}
         </AppContext.Provider>

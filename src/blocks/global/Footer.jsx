@@ -1,20 +1,28 @@
-import React from 'react';
+import React, {useContext, useRef, useEffect} from 'react';
+import AppContext from '@/providers';
+
 import footer from '@/globalData/footer.json'
 import Link from 'next/link';
+import leaf from '@/img/Leaflylogo3.png'
 export default function Footer() {
+    console.log('LEAF',leaf)
+    const { location, setlocation, clearlocation, locationlist,openlist,closelist } = useContext(AppContext);
+
     return (
         <div className='sw_footer_wrap container'>
             <div className="sw_footer_inner">
-                <div className="sw_footer_top vault">SOUTHWEST CANNABIS TAOS, NM</div>
+                <div className="sw_footer_top vault">SOUTHWEST CANNABIS</div>
                 <div className="sw_footer_bottom">
                     <div className="sw_footer_columns">
                     <div className="sw_footer_column sw_footer_location" style={{marginRight:40}}>
-                                <div className="sw_footer_location_address">CONTACT</div>
-                                <div className="sw_footer_location_address">ABOUT</div>
-                                <div className="sw_footer_locaiton_button">EVENTS</div>
-                                <div className="sw_footer_location_address">LOCATIONS</div>
-                                <div className="sw_footer_location_address">FAQ</div>
-                                <div className="sw_footer_locaiton_button">CAREERS</div>
+                    <img src={leaf.src} style={{width:'50px',marginBottom:10}}/>
+
+                                <div className="sw_footer_location_address"><Link href="/locations">LOCATIONS</Link></div>
+                                <div className="sw_footer_location_address"><Link href="/deals">DEALS</Link></div>
+                                <div className="sw_footer_location_address"><Link href="/loyalty">REWARDS</Link></div>
+                                <div className="sw_footer_location_address"><Link href={location.link} target="_blank">ORDER ONLINE</Link></div>
+                                <div className="sw_footer_location_address"><Link href="/faq">FAQ</Link></div>
+                                <div className="sw_footer_location_address"><Link href="">CONTACT</Link></div>
 
                         </div>
 

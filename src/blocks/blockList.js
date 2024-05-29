@@ -14,6 +14,9 @@ import Values from './Values';
 import VerticalBlocks from './VerticalBlocks';
 import Locations from './Locations';
 import FullImage from './FullImage';
+import DealsMaster from './DealsMaster';
+import FAQBlank from './FAQBlank';
+import LoyaltyBlank from './LoyaltyBlank';
 
 export const blocks = {
     "hero" : Hero,
@@ -31,5 +34,8 @@ export const blocks = {
     "values":Values,
     "verticalblocks":VerticalBlocks,
     "locations":Locations,
-    "fullimage":FullImage
+    "fullimage":FullImage,
+    "dealsmaster":DealsMaster,
+    "faqblank":FAQBlank,
+    "loyaltyblank":LoyaltyBlank
 }
