@@ -16,7 +16,7 @@ export default function DealsMaster({header}) {
     return (
         <div className="dm_wrap">
                 <div className="dm_top_header">
-                    <img src="/deals2@2x.png"/>
+                    <img src="/deals3@2x.png"/>
                 </div>
 
             <div className="dm_inner">

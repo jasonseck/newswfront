@@ -28,10 +28,10 @@ export default function ImageWithText({
                     <div className="iwt_text">
                             <div className="iwt_text_inner">
                                 <div className="iwt_text_wrap" style={{
-                                    textAlign: reverse ? 'left' : 'right'
+                                    textAlign: !reverse ? 'left' : 'right'
                                 }}>
                                     <div className="iwt_text_subtitle subheader subhea">{preheading}</div>
-                                    <div className={`iwt_text_title header vault ${reverse ? "afterleft":"afterright"}`}>{heading}</div>
+                                    <div className={`iwt_text_title header vault ${!reverse ? "afterleft":"afterright"}`}>{heading}</div>
                                     <div className="iwt_text_body">{text}</div>
                                     <div className="iwt_text_button_wrap">
                                         <div className="iwt_text_button sw_button">

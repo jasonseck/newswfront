@@ -7,7 +7,16 @@ const AppContext = createContext(null);
 export default AppContext;
 
 export const AppProvider = ({ children }) => {
-    
+    const lmap = [
+        "taos",
+        "espanolanorth",
+        "espanolasouth",
+        "sfcerillos",
+        "sfoldsantafetrail",
+        "sfguad",
+        "abq98th",
+        "abqmontgomery"
+    ]
     const locationlist = [
         {
             name:"Southwest Cannabis Taos",
@@ -24,7 +33,8 @@ export const AppProvider = ({ children }) => {
                 "Mon - Sat | 9am - 8pm",
                 "Sun | 11am - 6pm"
             ],
-            tel : "575-224-3254"
+            tel : "575-224-3254",
+            slug:"taos"
         },
         {
             name:"Espanola - N. Riverside",
@@ -45,7 +55,8 @@ export const AppProvider = ({ children }) => {
                 "Sun | 10am - 6pm"
 
             ],
-            tel:"505-747-2908"
+            tel:"505-747-2908",
+            slug:"espanolanorth"
         },
 
         {
@@ -66,7 +77,8 @@ export const AppProvider = ({ children }) => {
                 "Sat | 10am - 7pm",
                 "Sun | 10am - 6pm"
             ],
-            tel:"505-747-2644"
+            tel:"505-747-2644",
+            slug:"espanolasouth"
         },
         {
             name:"Santa Fe - Cerillos",
@@ -83,7 +95,8 @@ export const AppProvider = ({ children }) => {
                 "Mon - Sat | 9am - 8pm",
                 "Sun | 10am - 6pm"
             ],
-            tel:"505-372-7046"
+            tel:"505-372-7046",
+            slug:"sfcerillos"
         },
         {
             name:"Santa Fe - Old Santa Fe Trail",
@@ -100,7 +113,8 @@ export const AppProvider = ({ children }) => {
                 "Mon - Sat | 9am - 6pm",
                 "Sun | Closed"
             ],
-            tel:"505-780-5391"
+            tel:"505-780-5391",
+            slug:"sfoldsantafetrail"
         },
         {
             name:"Santa Fe - Guadalupe & Sabino",
@@ -117,7 +131,8 @@ export const AppProvider = ({ children }) => {
                 "Mon - Sat | 9am - 8pm",
                 "Sun | 9am - 6pm"
             ],
-            tel:"505-780-8764"
+            tel:"505-780-8764",
+            slug:"sfguad"
         },
         {
             name:"Albuquerque 98th",
@@ -135,7 +150,8 @@ export const AppProvider = ({ children }) => {
                 "Sat | 10am - 8pm",
                 "Sun | 10am - 7pm"
             ],
-            tel:"505-433-4174"
+            tel:"505-433-4174",
+            slug:"abq98th"
         },
         {
             name:"Albuquerque Montgomery & Eubank",
@@ -154,7 +170,8 @@ export const AppProvider = ({ children }) => {
                 "Thu - Sat | 10am - 7pm",
                 "Sun | Closed"
             ],
-            tel:"505-404-8885"
+            tel:"505-404-8885",
+            slug:"abqmontgomery"
         }
 
 

@@ -17,6 +17,7 @@ import FullImage from './FullImage';
 import DealsMaster from './DealsMaster';
 import FAQBlank from './FAQBlank';
 import LoyaltyBlank from './LoyaltyBlank';
+import BlogBlank from './BlogBlank';
 
 export const blocks = {
     "hero" : Hero,
@@ -37,5 +38,6 @@ export const blocks = {
     "fullimage":FullImage,
     "dealsmaster":DealsMaster,
     "faqblank":FAQBlank,
-    "loyaltyblank":LoyaltyBlank
+    "loyaltyblank":LoyaltyBlank,
+    "blogblank":BlogBlank
 }

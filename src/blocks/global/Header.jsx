@@ -55,7 +55,7 @@ export default function Header() {
                                 <Link href="/loyalty">REWARDS</Link>
                             </li>
                             <li  className="header_link">
-                                <Link href={location.link} target="_blank">ORDER ONLINE</Link>
+                                <Link href={"/locations?store="+location.slug}>ORDER ONLINE</Link>
                             </li>
 
                             {/* {header.navLinks.map((link)=>{

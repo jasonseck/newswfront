@@ -7,7 +7,7 @@ import AppContext from '@/providers';
 import Map, { Marker, Popup, NavigationControl, GeolocateControl } from "react-map-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import logo from '@/img/Leaflylogo3.png'
-
+import { useRouter } from 'next/router';
 const lmap = [
     "taos",
     "espanolanorth",
@@ -25,8 +25,8 @@ export default function LocationView(props) {
     useEffect(()=>{
     mapRef?.current?.flyTo({ center: [place.location.long, place.location.lat], zoom: 16 });
     },[props])
-
-
+    const router = useRouter();
+    const { location, setlocation, clearlocation, locationlist,openlist,closelist } = useContext(AppContext);
     const mapboxToken = process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN;
     const mapRef = useRef(null);
 
@@ -44,6 +44,24 @@ export default function LocationView(props) {
        
                         )
                     })}
+                </div>
+                <div className="location_change">
+                    <select className="lc_select"
+                        onChange={(e=>{
+                            var temp = locationlist.find(x=>x.slug == e.target.value);
+                            console.log('THE TEMP!!!!',temp)
+                            setlocation(temp)
+                            console.log("the e value",e.target.value)
+                            router.push("/locations?store="+e.target.value)
+                        })}
+                    >
+                        <option>change location</option>
+                        {locationlist.map(l=>{
+                            return (
+                                <option value={l.slug}>{l.name}</option>
+                            )
+                        })}
+                    </select>
                 </div>
                 <div className="location_map">
                     <div className="location_map_inner">
