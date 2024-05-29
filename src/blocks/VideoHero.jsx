@@ -5,7 +5,7 @@ export default function VideoHero({video,logo,text,textoverride}) {
         <div className="video_panel_wrap container">
             <div className="video_panel_inner">
                 <div className="video_panel_content_container">
-                    <video src="/avideo.mp4" autoPlay loop muted playsInline className="/sw_facility_3.mp4" poster="/facility_poster_blur.jpg"/>
+                    <video src="/amovie.mp4" autoPlay loop muted playsInline className="/sw_facility_3.mp4" poster="/facility_poster_blur.jpg"/>
                     {textoverride ? (
                     <div className="video_text vault">HIGH ALTITUDE,<br/>HANDCRAFTED IN TAOS</div>
 
