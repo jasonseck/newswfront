@@ -116,7 +116,12 @@ body {
 .background_secondary {
   background-color:$background-secondary;
 }
-
+.yellow {
+  color:$sw-yellow;
+}
+.red {
+  color:$sw-red;
+}
 .sw_button {
   border:1px solid $button-border;
   padding:8px 14px 8px 14px;
@@ -384,8 +389,8 @@ ul.header_links > li {
 .values_header_wrap {
   background:$sw-black;
   color:$sw-sand;
-  padding-top:30px;
-  padding-bottom:60px;
+  padding-top:70px;
+  padding-bottom:80px;
 
 }
 .values_button_row {
@@ -1146,4 +1151,26 @@ height:40px;
     align-items: center;
     padding:20px;
   }
+}
+
+.loy_header {
+  font-size:36px;
+  margin-bottom:10px;
+  text-align:center;
+}
+.loy_group {
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
+  color:$sw-black;
+  font-size:18px;
+  align-items: center;
+  margin-bottom:6px;
+}
+
+.loy_line_title {
+  font-weight:bold;
+  background:$sw-yellow;
+  padding:4px;
+  margin-right:3px;
 }
