@@ -8,7 +8,7 @@ export default function AgeCheck() {
     return (
         <div className="agecheck_wrapper">
             <div className="agecheck_inner">
-                <video src="/sw_facility_3.mp4" autoPlay loop muted playsInline className="video_panel_video" poster="/facility_poster_blur.jpg"/>
+                <video src="/amovie.mp4" autoPlay loop muted playsInline className="video_panel_video" poster="/facility_poster_blur.jpg"/>
                 <div className="agecheckbox">
                     <div className="agechecklogo"><img src="/sw_logo_set_005.png"/></div>
                     <div className="agechecktitle vault">Please verify your age</div>
