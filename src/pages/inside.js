@@ -19,7 +19,9 @@ export default function Inside({Component, pageProps}) {
       <>
       <Announce/>
       <Header/>
+      <div className="rosw">
       <Component {...pageProps} />
+      </div>
       <Footer/>
       </>
     )}

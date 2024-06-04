@@ -1,10 +1,13 @@
-import React, {useContext, useState} from 'react';
+import React, {useContext, useState, useEffect} from 'react';
 import AppContext from '@/providers';
 import SlidingPane from "react-sliding-pane";
 import "react-sliding-pane/dist/react-sliding-pane.css";
 import { LocationOutline } from 'react-ionicons'
 export default function Locations(props) {
     const { location, setlocation, clearlocation, locationlist,listopen, togglelist, openlist, closelist } = useContext(AppContext);
+    useEffect(()=>{
+        return;
+    },[])
     return (
         <div className="location_selector_wrap" style={{width:props.width}}>
             <div class="location_selector_inside">

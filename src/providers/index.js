@@ -216,6 +216,15 @@ export const AppProvider = ({ children }) => {
     const setsidenews = (e) => {
         SetSideNews(e)
     }
+    const [mobilemenu, SetMobileMenu] = useState(false);
+    const setmobilemenu = (e) => {
+        if(e) {
+            SetMobileMenu(e);
+        } else {
+            SetMobileMenu(!mobilemenu)
+        }
+
+    }
 
     
     return (
@@ -236,7 +245,9 @@ export const AppProvider = ({ children }) => {
             showsignup,
             setsignup,
             sidenews,
-            setsidenews
+            setsidenews,
+            mobilemenu,
+            setmobilemenu
             }}>
             {children}
         </AppContext.Provider>
