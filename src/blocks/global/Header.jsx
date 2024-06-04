@@ -4,7 +4,7 @@ import header from '@/globalData/header.json';
 import Image from 'next/image';
 import Link from 'next/link'
 import Locations from './locations';
-import { MenuOutline } from 'react-ionicons'
+import { MenuOutline, CloseOutline } from 'react-ionicons'
 import { useRouter
 
  } from 'next/router';
@@ -135,7 +135,13 @@ export default function Header() {
                             onClick={()=>{
                                 setmobilemenu(false)
                             }}
-                        >close</div>
+                        >
+                            <CloseOutline
+                                color={'#00000'} 
+                                height="50px"
+                                width="50px"
+                                />
+                        </div>
                     </div>
                 ) : (
                     <div></div>

@@ -13,9 +13,7 @@ export default function ImageWithText({
     return (
         <div className="iwt_wrap container">
             <div className="iwt_inner">
-                <div className="iwt_row" style={{
-                    flexDirection:reverse ? 'row-reverse' : 'row'
-                }}>
+                <div className={`iwt_row ${reverse ? "iwt_reverse" : "iwt_normal"}`}>
                     <div className="iwt_image">
                         <div className="iwt_image_wrap">
                             <div className="iwt_image_display" style={{
