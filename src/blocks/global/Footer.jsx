@@ -14,7 +14,7 @@ export default function Footer() {
                 <div className="sw_footer_top vault">SOUTHWEST CANNABIS</div>
                 <div className="sw_footer_bottom">
                     <div className="sw_footer_columns">
-                    <div className="sw_footer_column sw_footer_location" style={{marginRight:40}}>
+                    <div className="sw_footer_column sw_footer_location sw_footer_mobile_top" style={{marginRight:40}}>
                     <img src={leaf.src} style={{width:'50px',marginBottom:10}}/>
 
                                 <div className="sw_footer_location_address"><Link href="/locations">LOCATIONS</Link></div>

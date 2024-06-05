@@ -500,6 +500,7 @@ padding:25px;
   justify-content: space-around;
   width:75%;
 }
+
 .footer_copy {
   color:white;
   width:25%;
@@ -929,6 +930,7 @@ a.sw_footer_location_button {
   flex-direction: column;
   align-items:center;
   padding-bottom:75px;
+  box-sizing:border-box;
 }
 
 .dm_top_header {
@@ -1389,5 +1391,20 @@ ul.mobile_header_links > li {
   }
   .rs_box2 {
     width:90%;
+  }
+  .sw_footer_bottom {
+    width:100%;
+  }
+  .sw_footer_mobile_top {
+    margin-bottom:25px;
+  }
+  .dm_inner {
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+  }
+  .location_name {
+    line-height:1;
+    margin-bottom:10px;
   }
 }
