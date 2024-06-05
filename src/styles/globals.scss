@@ -916,11 +916,20 @@ a.sw_footer_location_button {
 
 .sidenews_inner {
   width:100%;
+  cursor:pointer;
 }
-.sidenews_inner > a > img {
+.sidenews_inner >div > img {
   width:100%;
 }
 
+.sidenews_inner_wrap {
+  position:relative;
+}
+.sidenews_close {
+  position:absolute;
+  top:0px;
+  left:0px;
+}
 .dm_inner {
   
   width:100%;
