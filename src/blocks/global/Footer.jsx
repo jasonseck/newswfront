@@ -41,7 +41,7 @@ export default function Footer() {
                         </div>
                         <div className="sw_footer_column sw_footer_location">
                             <div className="sw_footer_location_title">
-                                ESPANOLA
+                                ESPAÑOLA
                             </div>
                             <div className="sw_footer_location_place">
                                 <div className="sw_footer_location_address">1205 N. Riverside Drive</div>
@@ -70,7 +70,7 @@ export default function Footer() {
                                 SANTA FE
                             </div>
                             <div className="sw_footer_location_place">
-                                <div className="sw_footer_location_address">1899 Cerillos Rd.</div>
+                                <div className="sw_footer_location_address">1899 Cerrillos Rd.</div>
                                 <div className="sw_footer_hours">Mon - Sat | 9am - 8pm</div>
                                 <div className="sw_footer_hours">Sun | 10am - 6pm</div>
                                 <a className="sw_footer_location_address" href="tel:5053727046">505-372-7046</a>

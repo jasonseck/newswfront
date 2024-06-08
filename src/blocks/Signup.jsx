@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import Image from 'next/image';
 import axios from 'axios';
 export default function Signup({preheading, heading, text}) {
-    const [email, setemail] = useState('jason');
+    const [email, setemail] = useState('');
     const submitform = () => {
         console.log('process')
         console.log(process.env.NEXT_PUBLIC_BACKEND_URL)

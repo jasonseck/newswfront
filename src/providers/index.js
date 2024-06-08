@@ -37,9 +37,9 @@ export const AppProvider = ({ children }) => {
             slug:"taos"
         },
         {
-            name:"Espanola - N. Riverside",
+            name:"Española - N. Riverside",
             address:"1205 N Riverside Dr",
-            city:"Espanola",
+            city:"Española",
             state:"NM",
             zip:87532,
             link:"https://www.leafly.com/dispensary-info/southwest-cannabis-n-riverside",
@@ -60,9 +60,9 @@ export const AppProvider = ({ children }) => {
         },
 
         {
-            name:"Espanola - S. Riverside",
+            name:"Española - S. Riverside",
             address:"421 S Riverside Drive",
-            city:"Espanola",
+            city:"Española",
             state:"NM",
             zip:87532,
             link:"https://www.leafly.com/dispensary-info/southwest-cannabis-s-riverside",
@@ -81,7 +81,7 @@ export const AppProvider = ({ children }) => {
             slug:"espanolasouth"
         },
         {
-            name:"Santa Fe - Cerillos",
+            name:"Santa Fe - Cerrillos",
             address:"1829 Cerrillos Rd",
             city:"Santa Fe",
             state:"NM",
