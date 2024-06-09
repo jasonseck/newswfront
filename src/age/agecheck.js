@@ -3,7 +3,6 @@ import AppContext from '@/providers';
 const vid = require('@/img/Leaflylogo3.png')
 export default function AgeCheck() {
     const { agecheck, setagecheck, agedeclined, setagedeclined, setsignup } = useContext(AppContext);
-    console.log('AGE CHECK SCREEN',vid)
 
     return (
         <div className="agecheck_wrapper">

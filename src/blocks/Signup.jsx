@@ -1,20 +1,25 @@
 import React, {useState} from 'react';
 import Image from 'next/image';
 import axios from 'axios';
-export default function Signup({preheading, heading, text}) {
+export default function Signup({preheading, heading, text,form}) {
     const [email, setemail] = useState('');
+
     const submitform = () => {
-        console.log('process')
-        console.log(process.env.NEXT_PUBLIC_BACKEND_URL)
+        const temp = {
+          email:email
+      }
+      const dataToSend = Object.entries(temp).map(([name, value]) => ({
+        field: name,
+        value,
+      }))
             fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/form-submissions`, {
             method: 'POST',
-            mode:"no-cors",
             headers: {
               'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-              form: "6660cf6e389fe10948604e39",
-              submissionData: {Email:email},
+              form: form.id,
+              submissionData: dataToSend
             }),
           }).then(res=>{
             console.log('did it',res)
@@ -48,6 +53,7 @@ export default function Signup({preheading, heading, text}) {
                     </div>
                 </div>
                 <div className="signup_body_text text_secondary">{text}</div>
+
             </div>
         </div>
     )

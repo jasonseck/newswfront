@@ -25,7 +25,6 @@ export default function Header() {
         scrollTop >= 58 ? header?.classList?.add('hw_fixed') : header?.classList?.remove('hw_fixed');
         scrollTop >= 58 ? vpanel?.classList?.add('hw_fixedv') : vpanel?.classList?.remove('hw_fixedv');
     };
-    console.log('THE MOBILE MENU',mobilemenu)
     return (
         <div className='header_wrap container'>
             <div className="header_inner">

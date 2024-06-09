@@ -5,7 +5,6 @@ import footer from '@/globalData/footer.json'
 import Link from 'next/link';
 import leaf from '@/img/Leaflylogo3.png'
 export default function Footer() {
-    console.log('LEAF',leaf)
     const { location, setlocation, clearlocation, locationlist,openlist,closelist } = useContext(AppContext);
 
     return (

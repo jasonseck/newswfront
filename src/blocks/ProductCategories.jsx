@@ -15,7 +15,6 @@ export default function ProductCategories({header,description,productcategory,ma
       }
     const { location, setlocation, clearlocation, locationlist,openlist,closelist } = useContext(AppContext);
     const prevAmount = usePrevious({location});
-    console.log('BLING BLING',location)
     const mapboxToken = process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN;
     const mapRef = useRef(null);
     const zoomToSelectedLoc = (e, airport, index) => {
@@ -39,9 +38,7 @@ export default function ProductCategories({header,description,productcategory,ma
     }
     }
     useEffect(()=>{
-        console.log('PROCESS THIS LOCATION',locationlist)
         changemap(location.location);
-        console.log(mapRef.current)
     },[location])
     return (
         <div className="product_categories_wrap container">
@@ -99,7 +96,6 @@ export default function ProductCategories({header,description,productcategory,ma
             </div>
             <div className="pc_box_wrap">
             {productcategory.map(c=>{
-                console.log('LCATION!!!!',location)
                 return (
                     <div className="pc_box">
                         <div className="pc_box_inner">
