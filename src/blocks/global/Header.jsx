@@ -57,6 +57,10 @@ export default function Header() {
                             <li className="header_link">
                                 <Link href="/loyalty">REWARDS</Link>
                             </li>
+                            <li className="header_link">
+                                <Link href="/faq">FAQ</Link>
+                            </li>
+
                             <li  className="header_link">
                                 <Link href={"/locations?store="+location.slug}>ORDER ONLINE</Link>
                             </li>
@@ -110,6 +114,16 @@ export default function Header() {
                                     
                                     >DEALS</div>
                                 </li>
+                                <li  className="mobile_header_link">
+                                    <div className="mobile_header_link_push" href="/deals"
+                                    onClick={()=>{
+                                        router.push('/faq');
+                                        setmobilemenu(false);
+                                    }}
+                                    
+                                    >FAQ</div>
+                                </li>
+
                                 <li className="mobile_header_link">
                                     <div className="mobile_header_link_push" href="/loyalty"
                                     onClick={()=>{
