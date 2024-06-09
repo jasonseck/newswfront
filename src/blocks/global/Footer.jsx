@@ -21,7 +21,7 @@ export default function Footer() {
                                 <div className="sw_footer_location_address"><Link href="/loyalty">REWARDS</Link></div>
                                 <div className="sw_footer_location_address"><Link href={"/locations?store="+location.slug}>ORDER ONLINE</Link></div>
                                 <div className="sw_footer_location_address"><Link href="/faq">FAQ</Link></div>
-                                <div className="sw_footer_location_address"><Link href="">CONTACT</Link></div>
+                                <div className="sw_footer_location_address"><Link href="/contact">CONTACT</Link></div>
 
                         </div>
 
