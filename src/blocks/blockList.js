@@ -15,7 +15,7 @@ import VerticalBlocks from './VerticalBlocks';
 import Locations from './Locations';
 import FullImage from './FullImage';
 import DealsMaster from './DealsMaster';
-import FAQBlank from './FAQBlank';
+import FAQ from './FAQ';
 import LoyaltyBlank from './LoyaltyBlank';
 import BlogBlank from './BlogBlank';
 
@@ -37,7 +37,7 @@ export const blocks = {
     "locations":Locations,
     "fullimage":FullImage,
     "dealsmaster":DealsMaster,
-    "faqblank":FAQBlank,
+    "faqblock":FAQ,
     "loyaltyblank":LoyaltyBlank,
     "blogblank":BlogBlank
 }
