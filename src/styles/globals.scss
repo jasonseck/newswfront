@@ -1222,6 +1222,7 @@ height:40px;
   flex-direction:column;
   justify-content: space-evenly;
   align-items: center;
+  padding:0;
 }
 .mobile_header_link {
   color:#303030;
@@ -1472,11 +1473,18 @@ font-size:30px;
   padding:10px 14px 10px 14px;
   border-radius:4px;
 }
+.rs_box_topline {
+  color:$sw-sand;
+  font-weight:900;
+  font-size:38px;
+  padding-top:15px;
+
+}
 .rs_box_top {
   display:flex;
   flex-direction:row;
   width:100%;
-  padding-top:35px;
+  padding-top:15px;
 }
 .rs_top_left {
   flex:1;
@@ -1509,9 +1517,37 @@ font-size:30px;
   color:$sw-sand;
   font-size:18px;
 }
+.rs_box_thanks {
+  padding-top:25px;
+  padding-bottom:25px;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+}
+.rs_box_thanks_title {
+  font-size:26px;
+  color:$sw-sand;
+}
+.rs_box_thanks_text {
+  font-size:18px;
+  color:$sw-sand;
+}
+
+.rs_box_thanks_close {
+  background:$sw_sand;
+  margin-top:12px;
+  padding:8px 12px 8px 12px;
+  border-radius:4px;
+  cursor:pointer;
+}
+
 @media(max-width:767px) {
  .rs_item_title {
   font-size:20px;
+ }
+ .rs_box_topline {
+  font-size:30px;
  }
  .rs_item_desc {
   font-size:15px;
@@ -1522,6 +1558,7 @@ font-size:30px;
  .rs_box_bottom {
   padding-left:15px;
   padding-right:15px;
+  padding-bottom:0px;
  }
   .formItem {
   width:100%;
@@ -1599,9 +1636,6 @@ font-size:30px;
     width:100%;
     margin-bottom:25px;
   }
-  .rs_box2 {
-    width:90%;
-  }
   .sw_footer_bottom {
     width:100%;
   }
@@ -1637,13 +1671,17 @@ font-size:30px;
   }
   .rs_signup_text {
     font-size:18px;
+    margin-bottom:4px;
   }
   .rewardsignup_inner {
     width:95%;
   }
   .rs_box2 {
-    width:100%;
+    width:95%;
     top:30px;
+    padding:10px;
+    box-sizing:border-box;
+    text-align: center;
   }
 }
 
