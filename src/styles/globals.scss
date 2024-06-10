@@ -1678,7 +1678,8 @@ font-size:30px;
   }
   .rs_box2 {
     width:95%;
-    top:30px;
+    top:50%;
+    transform:translate(-50%,-50%);
     padding:10px;
     box-sizing:border-box;
     text-align: center;
