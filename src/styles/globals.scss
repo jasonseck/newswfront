@@ -1429,6 +1429,8 @@ ul.mobile_header_links > li {
   width:100%;
   margin:auto;
   max-width:1000px;
+  padding-top:75px;
+  padding-bottom:75px;
 }
 
 .form_title {
@@ -1464,6 +1466,18 @@ font-size:30px;
 }
 
 @media(max-width:767px) {
+ .formItem {
+  width:100%;
+  margin-left:10px;
+  margin-right:10px;
+ }
+ .fb_wrap {
+  padding-top:15px;
+  padding-bottom:15px;
+ }
+ .form_title {
+  margin-left:10px;
+ }
   .header_inner {
     display:none;
   }
