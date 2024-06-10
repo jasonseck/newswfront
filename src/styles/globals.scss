@@ -1350,6 +1350,7 @@ ul.mobile_header_links > li {
 .faq_heading {
   font-size:46px;
   margin-bottom:20px;
+  line-height:1.1
 }
 .faqs_wrap {
   display:flex;
@@ -1383,14 +1384,19 @@ ul.mobile_header_links > li {
 }
 .faq_left {
   flex:1;
+  padding-left:40px;
 }
 .faq_right {
   width:400px;
 }
+.mobile_faq_contact {
+  display:none;
+
+}
 .faq_right_inner {
   width:400px;
   padding:40px;
-
+  box-sizing:border-box;
 }
 .faq_right_box {
   border:1px solid $sw-black;
@@ -1505,5 +1511,20 @@ ul.mobile_header_links > li {
  }
  .faq_right_inner {
   display:none;
+ }
+ .faq_left {
+  padding-left:0px;
+ }
+ .mobile_faq_contact {
+  display:initial;
+  border:1px solid $sw-black;
+  padding-top:20px;
+  padding-bottom:20px;
+  margin-bottom:15px;
+  margin-left:15px;
+  margin-right:15px;
+ }
+ .faq_inner {
+  padding-top:15px;
  }
 }

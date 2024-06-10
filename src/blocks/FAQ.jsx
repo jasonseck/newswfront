@@ -54,6 +54,16 @@ export default function FAQ({faqsection}) {
                         })}                    
 
                     </div>
+                    <div className="mobile_faq_contact">
+                            <div>More Questions?</div>
+                            <div>Click below to get in touch with us</div>
+                            <div className="faq_button vault" onClick={()=>{
+                                router.push('/contact')
+                            }}>
+                                CONTACT US
+                            </div>
+                    </div>
+
                     <div className="faq_right">
                         <div className="faq_right_inner">
                         <div className="faq_right_box">

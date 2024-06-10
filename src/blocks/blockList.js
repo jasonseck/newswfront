@@ -18,6 +18,7 @@ import DealsMaster from './DealsMaster';
 import FAQ from './FAQ';
 import LoyaltyBlank from './LoyaltyBlank';
 import BlogBlank from './BlogBlank';
+import FormBlock from './FormBlock';
 
 export const blocks = {
     "hero" : Hero,
@@ -39,5 +40,6 @@ export const blocks = {
     "dealsmaster":DealsMaster,
     "faqblock":FAQ,
     "loyaltyblank":LoyaltyBlank,
-    "blogblank":BlogBlank
+    "blogblank":BlogBlank,
+    "formblock":FormBlock
 }
