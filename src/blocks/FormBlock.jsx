@@ -6,7 +6,9 @@ export default function FormBlock({form}) {
   const [formData, setFormData] = useState({
     firstname: "",
     lastname: "",
-    email: ""
+    email: "",
+    phone:"",
+    message:""
   });
   const handleInput = (e) => {
     console.log(e)
@@ -50,7 +52,7 @@ export default function FormBlock({form}) {
     return (
         <div className="fb_wrap">
           <div className="fb_info">
-            <div>{title}</div>
+            <div className="form_title vault">{title}</div>
           </div>
           <div className="fb_fields">
                   <div className="formItem">
@@ -83,9 +85,30 @@ export default function FormBlock({form}) {
                       onChange={handleInput}
                     />
                   </div>
-                  <button onClick={submitform}>submit</button>
+                  <div className="formItem">
+                    <div className="formLabel">Phone</div>
+                    <input
+                      className="formInput" 
+                      type="text" 
+                      name="phone" 
+                      value={formData.phone}
+                      onChange={handleInput}
+                    />
+                  </div>
+                  <div className="formItem2">
+                    <div className="formLabel">Message</div>
+                    <textarea
+                      className="formInput2" 
+                      type="text" 
+                      name="message" 
+                      value={formData.message}
+                      onChange={handleInput}
+                    />
+                  </div>
 
         </div>
+        <button onClick={submitform}>submit</button>
+
         </div>
     )
 }
