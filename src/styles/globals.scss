@@ -1510,7 +1510,16 @@ font-size:30px;
   font-size:18px;
 }
 @media(max-width:767px) {
- .formItem {
+ .rs_item_title {
+  font-size:20px;
+ }
+ .rs_item_desc {
+  font-size:15px;
+ }
+ .rs_item {
+  margin-bottom:12px;
+ }
+  .formItem {
   width:100%;
   margin-left:10px;
   margin-right:10px;
