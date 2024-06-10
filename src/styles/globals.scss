@@ -1465,18 +1465,73 @@ font-size:30px;
   padding:4px;
 }
 
+.form_button {
+  background:$sw-black;
+  display:inline-block;
+  color:$sw-sand;
+  padding:10px 14px 10px 14px;
+  border-radius:4px;
+}
+.rs_box_top {
+  display:flex;
+  flex-direction:row;
+  width:100%;
+  padding-top:35px;
+}
+.rs_top_left {
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items:center;
+}
+.rs_top_right {
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items:center;
+
+}
+.rs_item {
+  margin-bottom:20px;
+}
+.rs_item_title {
+  font-weight:900;
+  color:$sw-sand;
+  font-size:30px;
+  line-height:1;
+}
+.rs_item_day {
+  color:$sw-red;
+}
+.rs_item_desc {
+  color:$sw-sand;
+  font-size:18px;
+}
 @media(max-width:767px) {
  .formItem {
   width:100%;
   margin-left:10px;
   margin-right:10px;
  }
+ .formItem2 {
+  margin-left: 10px;
+  margin-right:10px;
+
+ }
+ .form_button {
+  margin-left:25px;
+ }
+ .fb_info {
+  padding-left:20px;
+  padding-right:20px;
+ }
  .fb_wrap {
   padding-top:15px;
   padding-bottom:15px;
  }
  .form_title {
-  margin-left:10px;
  }
   .header_inner {
     display:none;
@@ -1555,6 +1610,27 @@ font-size:30px;
   }
   .faq_question {
     line-height:1.1;
+  }
+  .agecheckbox {
+    padding:25px;
+    max-width:95%;
+  }
+  .agechecktitle {
+    line-height:1;
+    font-size:28px;
+  }
+  .rs_box_top {
+    flex-direction:column;
+  }
+  .rs_signup_text {
+    font-size:18px;
+  }
+  .rewardsignup_inner {
+    width:95%;
+  }
+  .rs_box2 {
+    width:100%;
+    top:30px;
   }
 }
 

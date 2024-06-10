@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import { useForm } from 'react-hook-form';
 
-export default function FormBlock({form}) {
+export default function FormBlock({form,message}) {
 
   const [formData, setFormData] = useState({
     firstname: "",
@@ -53,6 +53,7 @@ export default function FormBlock({form}) {
         <div className="fb_wrap">
           <div className="fb_info">
             <div className="form_title vault">{title}</div>
+            <div className="form_message">{message}</div>
           </div>
           <div className="fb_fields">
                   <div className="formItem">
@@ -107,7 +108,7 @@ export default function FormBlock({form}) {
                   </div>
 
         </div>
-        <button onClick={submitform}>submit</button>
+        <div className="form_button vault" onClick={submitform}>submit</div>
 
         </div>
     )
