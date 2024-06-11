@@ -1579,6 +1579,30 @@ font-size:30px;
 .flower_title {
   font-size:22px;
 }
+.coupon_wrap {
+  width:100%;
+}
+
+.coupon_inner {
+  width:100%;
+  max-width:1000px;
+  margin:auto;
+}
+.coupon_flex {
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content: space-around;
+}
+.coupon_item {
+  width:calc(50% - 10px);
+  margin:5px;
+}
+.coupon_item > img {
+  width:100%;
+  display:block;
+}
+
 @media(max-width:767px) {
   .contact_success {
     padding-left:20px;
@@ -1726,6 +1750,36 @@ font-size:30px;
     padding:10px;
     box-sizing:border-box;
     text-align: center;
+  }
+  .coupon_item {
+    width:100%;
+  }
+  .signup_text_title {
+    line-height:.9;
+    font-size:40px;
+  }
+  .sw_footer_top {
+    line-height:.9;
+  }
+  .dm_group {
+    flex-direction:column;
+  }
+  .dm_line {
+    text-align:center;
+  }
+  .dm_header {
+    text-align:center;
+    line-height:1;
+  }
+  .pc_map_wrap {
+    padding-top:65%;
+  }
+  .pc_box_title {
+    font-size:18px;
+  }
+  .ll_name {
+    line-height:1;
+    font-size:38px;
   }
 }
 

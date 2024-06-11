@@ -20,6 +20,7 @@ import LoyaltyBlank from './LoyaltyBlank';
 import BlogBlank from './BlogBlank';
 import FormBlock from './FormBlock';
 import Flower from './Flower';
+import Coupons from './Coupons';
 
 export const blocks = {
     "hero" : Hero,
@@ -43,5 +44,6 @@ export const blocks = {
     "loyaltyblank":LoyaltyBlank,
     "blogblank":BlogBlank,
     "formblock":FormBlock,
-    "flower":Flower
+    "flower":Flower,
+    "coupons":Coupons
 }

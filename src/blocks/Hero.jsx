@@ -1,12 +1,13 @@
 import React from 'react';
 
-export default function Hero({preheading,heading,text,backgroundImage,buttonlabel,fullimage,buttonlink}) {
+export default function Hero({preheading,heading,text,backgroundImage,showbutton,buttonlabel,fullimage,buttonlink}) {
     const theobj = {__html:heading}
     return (
         <div className="hero_panel_wrap container">
             {fullimage ? (
                 <div className="hero_panel_fullimage">
                     <img src={backgroundImage.url} />
+                    {showbutton ? (
                     <div className="hero_panel_fullimage_button">
                     <div className="hero_panel_button">
                                 <a className="hero_button_inner vault" href={buttonlink} target="_blank">
@@ -15,6 +16,8 @@ export default function Hero({preheading,heading,text,backgroundImage,buttonlabe
                             </div>
 
                     </div>
+
+                    ) : null}
                 </div>
             ) : (
                 <div className="hero_panel_inner" style={{
