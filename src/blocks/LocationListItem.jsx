@@ -26,7 +26,7 @@ export default function LocationListItem(props) {
     console.log('from the component')
     return (
         <div className="ll_wrap">
-            <div className="ll_name vault">{l.name}</div>
+            <div className="ll_name">{l.name}</div>
             <div className="ll_address">
                 <div className="ll_address_line">
                 {l.address}

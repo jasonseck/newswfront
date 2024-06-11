@@ -1,7 +1,7 @@
 import React from 'react';
 
-export default function BlogBlank({}) {
-    return (
+export default function BlogBlank({show}) {
+    return show ? (
         <div className="blog_panel_wrap">
             <div className="blog_inner">
 
@@ -48,5 +48,5 @@ export default function BlogBlank({}) {
                 </div>
             </div>
         </div>
-    )
+    ) : null
 }

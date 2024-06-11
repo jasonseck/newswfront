@@ -212,7 +212,7 @@ export const AppProvider = ({ children }) => {
         SetSignup(e)
     }
 
-    const [sidenews, SetSideNews] = useState(true);
+    const [sidenews, SetSideNews] = useState(false);
     const setsidenews = (e) => {
         SetSideNews(e)
     }

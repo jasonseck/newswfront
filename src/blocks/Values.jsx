@@ -30,7 +30,9 @@ export default function Values({values,showbutton,buttontext,buttonlink}) {
                 {showbutton &&
                     <div className="values_button_row">
                         <div className="sw_button_solid">
-                         <Link href={"/locations?store="+location.slug} className="vault">{buttontext}</Link>
+                         {/* <Link href={"/locations?store="+location.slug} className="vault">{buttontext}</Link> */}
+                         <Link href="/flower" className="vault">{buttontext}</Link>
+
                         </div>
                     </div>
                 }

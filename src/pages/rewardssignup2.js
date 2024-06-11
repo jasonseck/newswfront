@@ -9,7 +9,7 @@ const form = {id:"6660cf6e389fe10948604e39"}
 
 export default function RewardsSignup({Component, pageProps}) {
     const { agecheck } = useContext(AppContext);
-    const { showsignup, setsignup } = useContext(AppContext);
+    const { showsignup, setsignup, setsidenews } = useContext(AppContext);
     const [success, setSuccess] = useState(false)
     const [email, setEmail] = useState();
 
@@ -51,6 +51,7 @@ export default function RewardsSignup({Component, pageProps}) {
                     <div className="rs_box_thanks_close"
                     onClick={()=>{
                         setsignup(false)
+                        setsidenews(true)
                     }}
                     >CLOSE</div>
                 </div>  
@@ -128,6 +129,7 @@ export default function RewardsSignup({Component, pageProps}) {
                     <div className="rs_signup_close"
                         onClick={()=>{
                             setsignup(false);
+                            setsidenews(true);
                         }}
                     >
                         <CloseCircleOutline

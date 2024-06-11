@@ -36,7 +36,7 @@ export default function LocationView(props) {
     return (
         <div className="location_view_wrap">
             <div className="location_view_inner">
-                <div className="location_name vault">{place?.name}</div>
+                <div className="location_name">{place?.name}</div>
                 <div className="location_hours">
                     {place?.hours?.map(m=>{
                         return (

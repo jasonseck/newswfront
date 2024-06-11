@@ -565,6 +565,7 @@ a.sw_footer_location_button {
 .location_name {
   font-size:48px;
   color:$sw-black; 
+  text-transform:uppercase;
 }
 
 .location_hours {
@@ -596,6 +597,7 @@ a.sw_footer_location_button {
 .ll_name {
   color:$sw-black;
   font-size:48px;
+  text-transform:uppercase;
 }
 .location_list_wrap {
   width:100%;
@@ -1117,6 +1119,8 @@ height:40px;
   color:$sw-sand;
   margin-top:5px;
   border-radius:4px;
+  height:40px;
+  margin-top:12px;
 }
 .blog_inner {
   padding-bottom:75px;
@@ -1541,9 +1545,48 @@ font-size:30px;
   border-radius:4px;
   cursor:pointer;
 }
-
+.contact_success {
+  text-align:center;
+  color:$sw-red;
+  font-size:20px;
+}
+.spin_loader {
+  width:100%;
+  display:flex;
+  justify-content: center;
+}
+.flower_wrap {
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content: space-around;
+  padding:25px;
+}
+.flower_inner {
+  width:100%;
+  margin:auto;
+}
+.flower_item {
+  width:31%;
+  margin-bottom:20px;
+}
+.flower_image {
+  width:100%;
+}
+.flower_image > img {
+  width:100%;
+}
+.flower_title {
+  font-size:22px;
+}
 @media(max-width:767px) {
- .rs_item_title {
+  .contact_success {
+    padding-left:20px;
+    padding-right:20px;
+    margin-top:10px;
+    margin-bottom:10px;
+  }
+  .rs_item_title {
   font-size:20px;
  }
  .rs_box_topline {

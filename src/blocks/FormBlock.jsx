@@ -1,8 +1,10 @@
 import React, {useState} from 'react';
 import { useForm } from 'react-hook-form';
-
+import { Puff } from 'react-loader-spinner';
 export default function FormBlock({form,message}) {
 
+  const [success,setSuccess] = useState(false)
+  const [loading, setLoading] = useState(false)
   const [formData, setFormData] = useState({
     firstname: "",
     lastname: "",
@@ -20,15 +22,18 @@ export default function FormBlock({form,message}) {
     }))
   }
   const submitform = () => {
+    setLoading(true)
     const temp = {
       email:formData.email,
       firstname:formData.firstname,
-      lastname:formData.lastname
+      lastname:formData.lastname,
+      phone:formData.phone,
+      message:formData.message
   }
-  const dataToSend = Object.entries(temp).map(([name, value]) => ({
-    field: name,
-    value,
-  }))
+        const dataToSend = Object.entries(temp).map(([name, value]) => ({
+          field: name,
+          value,
+        }))
         fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/form-submissions`, {
         method: 'POST',
         headers: {
@@ -39,9 +44,9 @@ export default function FormBlock({form,message}) {
           submissionData: dataToSend
         }),
       }).then(res=>{
-        console.log('did it',res)
+        setSuccess(true)
+        setLoading(false)
       }).catch(error=>{
-        console.log('THERE WAS ERRER',error)
       })
       
 
@@ -109,6 +114,20 @@ export default function FormBlock({form,message}) {
 
         </div>
         <div className="form_button vault" onClick={submitform}>submit</div>
+        {loading ? (
+          <div className="spin_loader">
+          <Puff
+                  height="35"
+                  width="35"
+                  color="red"
+                  />
+            </div>
+        ) : null}
+        {success ? (
+              <div className="contact_success">Your message has been received! Please allow us up to 24 hours to respond</div>
+
+            ) : null
+            }
 
         </div>
     )
