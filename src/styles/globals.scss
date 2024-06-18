@@ -324,7 +324,7 @@ ul.header_links > li {
 }
 
 .location_class {
-  background:green;
+  width:100%;
 }
 .slide-pane__content {
   background:$sw-black;
@@ -1841,6 +1841,15 @@ justify-content: center;
   .textblock_inner {
     padding-left:15px;
     padding-right:15px;
+  }
+  .ls_wrap {
+    width:100%;
+  }
+  .location_class {
+    width:100%;
+  }
+  .location_overlay_class {
+    width:100%;
   }
 }
 

@@ -26,7 +26,6 @@ export default function Locations(props) {
                 isOpen={listopen}
                 title="Hey, it is optional pane title.  I can be React component too."
                 subtitle="Optional subtitle."
-                width="50%"
                 hideHeader={true}
                 onRequestClose={() => {
                 // triggered on "<" on left top click or on outside click
