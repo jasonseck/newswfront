@@ -21,6 +21,8 @@ import BlogBlank from './BlogBlank';
 import FormBlock from './FormBlock';
 import Flower from './Flower';
 import Coupons from './Coupons';
+import ShopLoader from './ShopLoader';
+import PageHeader from './PageHeader';
 
 export const blocks = {
     "hero" : Hero,
@@ -45,5 +47,7 @@ export const blocks = {
     "blogblank":BlogBlank,
     "formblock":FormBlock,
     "flower":Flower,
-    "coupons":Coupons
+    "coupons":Coupons,
+    "shoploader":ShopLoader,
+    "pageheader":PageHeader
 }

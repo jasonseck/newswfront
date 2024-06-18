@@ -33,6 +33,7 @@ export default function Locations(props) {
                 closelist();
                 }}
               >
+                    <div className="locations_panel">
                     {locationlist.map((l,i)=>{
                         return (
                             <div className="ls_wrap">
@@ -50,6 +51,7 @@ export default function Locations(props) {
                             </div>
                         )
                     })}
+                    </div>
 
               </SlidingPane>
         </div>

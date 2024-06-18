@@ -1,15 +1,16 @@
 import React from 'react';
 import Link from 'next/link';
 import RichTextParser from '@/utils/RichTextParser';
-export default function TextBlock({heading,text}) {
+export default function TextBlock({heading,text,paddingtop,paddingbottom}) {
     return (
-        <div className="py-10 px-6">
-
-            <h2>{heading}</h2>
+        <div className="textblock_wrap">
+            <div className="textblock_inner" style={{
+                paddingTop:paddingtop ? paddingtop : 0,
+                paddingBottom:paddingbottom ? paddingbottom : 0
+            }}>
+            <h2 className="textblock_heading">{heading}</h2>
             <RichTextParser content={text} />
-            <Link href="/about">about</Link>
-            <Link href="/">home</Link>
-
+            </div>
         </div>
     )
 }

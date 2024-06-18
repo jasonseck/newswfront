@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { useRouter } from 'next/router';
 export default function ImageWithText({
     preheading,
     heading,
@@ -10,6 +10,7 @@ export default function ImageWithText({
     image,
     reverse
 }) {
+    const router = useRouter();
     return (
         <div className="iwt_wrap container">
             <div className="iwt_inner">
@@ -31,11 +32,19 @@ export default function ImageWithText({
                                     <div className="iwt_text_subtitle subheader subhea">{preheading}</div>
                                     <div className={`iwt_text_title header vault ${!reverse ? "afterleft":"afterright"}`}>{heading}</div>
                                     <div className="iwt_text_body">{text}</div>
+                                    {showbutton ? (
                                     <div className="iwt_text_button_wrap">
-                                        <div className="iwt_text_button sw_button">
-                                            {buttonlabel}
-                                        </div>
+                                    <div className="iwt_text_button sw_button"
+                                        onClick={()=>{
+                                            router.push(buttonlink)
+                                        }}         
+                                    >
+                                        {buttonlabel}
                                     </div>
+                                </div>
+
+                                    ) : null}
+
                                 </div>
                             </div>
                     </div>

@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 import Link from 'next/link';
 export default function Values({values,showbutton,buttontext,buttonlink}) {
     const { location, setlocation, clearlocation, locationlist,openlist,closelist } = useContext(AppContext);
-
+    console.log('THE LOCATIONS IS HERE',location)
     return (
         <div className="values_panel_wrap container">
             <div className="values_inner">
@@ -31,7 +31,7 @@ export default function Values({values,showbutton,buttontext,buttonlink}) {
                     <div className="values_button_row">
                         <div className="sw_button_solid">
                          {/* <Link href={"/locations?store="+location.slug} className="vault">{buttontext}</Link> */}
-                         <Link href="/flower" className="vault">{buttontext}</Link>
+                         <Link href={`/locations?store=${location.slug}`} className="vault">{buttontext}</Link>
 
                         </div>
                     </div>
