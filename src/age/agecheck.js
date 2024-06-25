@@ -21,6 +21,7 @@ export default function AgeCheck() {
                     <div className="agecheckbuttonswrap">
                     <div className="agecheckbutton vault"
                         onClick={()=>{
+                            console.log('clicked')
                             setagecheck();
                             setsignup(true);
 
