@@ -1,11 +1,11 @@
 "use client"
 
 import { createContext, useContext, useState } from 'react';
-
+import { getCookie } from 'cookies-next';
 const AppContext = createContext(null);
 
 export default AppContext;
-
+let icv = getCookie('swagegate') || false;
 export const AppProvider = ({ children }) => {
     const lmap = [
         "taos",

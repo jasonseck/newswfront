@@ -12,6 +12,7 @@
   "dependencies": {
     "autoprefixer": "^10.0.1",
     "axios": "^1.6.8",
+    "cookies-next": "^4.2.1",
     "dotenv": "^16.4.5",
     "escape-html": "^1.0.3",
     "mapbox-gl": "^3.3.0",
