@@ -1,4 +1,7 @@
 import { Html, Head, Main, NextScript } from "next/document";
+import GoogleAnalytics from "./GA";
+const GA_TRACKING_ID = "G-E0KSY2DGCX";
+
 const stores = [
   {selected:"taos"}
 ]
@@ -16,6 +19,8 @@ export default function Document() {
           />
 
       </Head>
+      <GoogleAnalytics GA_TRACKING_ID={GA_TRACKING_ID} />
+
       <body>
         <Main />
         <NextScript />

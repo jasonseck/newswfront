@@ -18,12 +18,17 @@ axios.defaults.withCredentials = true;
 import RewardsSignup from "./rewardssignup2";
 import Inside from "./inside";
 import SideNews from "./SideNews";
+
+const GA_TRACKING_ID = "G-E0KSY2DGCX";
+import GoogleAnalytics from "./GA";
 export default function App({ Component, pageProps }) {
   return (
     <div style={{padding:0}}>
       {/* <div className="mobile_message">not mobile ready. please view on desktop</div>
       <div className="mobile_gate"> */}
           <Head>
+          {/* <GoogleAnalytics GA_TRACKING_ID={GA_TRACKING_ID} /> */}
+
             <title>Southwest Cannabis</title>
             <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
           </Head>
