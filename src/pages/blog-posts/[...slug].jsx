@@ -1,4 +1,4 @@
-import RichTextParser from '@/utils/RichTextParser'
+import RichTextParser from '../../utils/RichTextParser'
 import React from 'react'
 import axios from 'axios';
 
