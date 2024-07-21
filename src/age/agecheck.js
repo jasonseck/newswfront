@@ -1,7 +1,7 @@
 import React, {useContext, useEffect} from 'react';
 import { setCookie, getCookie,deleteCookie } from 'cookies-next';
-import AppContext from '@/providers';
-const vid = require('@/img/Leaflylogo3.png')
+import AppContext from '../providers';
+const vid = require('../img/Leaflylogo3.png')
 export default function AgeCheck() {
     const { agecheck, setagecheck, agedeclined, setagedeclined, setsignup } = useContext(AppContext);
     return (

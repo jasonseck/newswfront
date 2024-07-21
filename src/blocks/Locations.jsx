@@ -4,7 +4,7 @@ import React, {useContext, useEffect,useState} from 'react';
 import Image from 'next/image';
 import {useSearchParams} from 'next/navigation';
 import LocationView from './LocationView';
-import AppContext from '@/providers';
+import AppContext from '../providers';
 import LocationListItem from './LocationListItem';
 
 const lmap = [

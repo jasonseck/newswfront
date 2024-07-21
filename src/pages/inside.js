@@ -1,10 +1,10 @@
-import AppContext from '@/providers';
+import AppContext from '../providers';
 
 import React, {useContext, useState} from 'react';
-import AgeCheck from '@/age/agecheck';
-import Announce from '@/blocks/global/Announce';
-import Header from '@/blocks/global/Header';
-import Footer from '@/blocks/global/Footer';
+import AgeCheck from '../age/agecheck';
+import Announce from '../blocks/global/Announce';
+import Header from '../blocks/global/Header';
+import Footer from '../blocks/global/Footer';
 
 export default function Inside({Component, pageProps}) {
     const { agecheck } = useContext(AppContext);

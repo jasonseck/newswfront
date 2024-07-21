@@ -1,7 +1,7 @@
 "use client";
 
 import React, {useContext, useRef, useEffect} from 'react';
-import AppContext from '@/providers';
+import AppContext from '../providers';
 import Map, { Marker, Popup, NavigationControl, GeolocateControl } from "react-map-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import Link from 'next/link';

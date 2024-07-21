@@ -49,7 +49,7 @@ console.log('COLORME',colors['monday'])
             <div className="deals_panel">
                 <div className="deals_inner">
                 <div className="deals_inner_wrap">
-                    <div className="deals_top" style={{background:`url(${backgroundimage.url})`,backgroundSize:'cover',backgroundPosition:'center'}}>
+                    <div className="deals_top" style={{background:`url(${backgroundimage?.url})`,backgroundSize:'cover',backgroundPosition:'center'}}>
                         <div className="deals_top_inner">
                             <div className="bigdeal">TODAY'S DEALS</div>
                             {days.filter(e=>e == currentday).map(day=>{

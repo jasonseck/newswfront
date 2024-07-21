@@ -1,5 +1,5 @@
 import React, {useContext, useState, useEffect} from 'react';
-import AppContext from '@/providers';
+import AppContext from '../../providers';
 import SlidingPane from "react-sliding-pane";
 import "react-sliding-pane/dist/react-sliding-pane.css";
 import { LocationOutline } from 'react-ionicons'

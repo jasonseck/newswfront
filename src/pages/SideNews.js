@@ -1,5 +1,4 @@
-import AppContext from '@/providers';
-
+import AppContext from '../providers/index.js';
 import React, {useContext, useState} from 'react';
 import { CloseCircleOutline } from 'react-ionicons'
 import Link from 'next/link'

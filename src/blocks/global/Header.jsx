@@ -1,6 +1,6 @@
 import React, {useContext, useRef, useEffect} from 'react';
-import AppContext from '@/providers';
-import header from '@/globalData/header.json';
+import AppContext from '../../providers';
+import header from '../../globalData/header.json';
 import Image from 'next/image';
 import Link from 'next/link'
 import Locations from './locations';

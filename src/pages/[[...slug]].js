@@ -1,5 +1,5 @@
 import React from 'react';
-import RenderBlocks from '@/utils/RenderBlocks';
+import RenderBlocks from '../utils/RenderBlocks';
 import axios from 'axios';
 
 export default function Page({page}) {

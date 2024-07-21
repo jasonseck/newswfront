@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import RichTextParser from '@/utils/RichTextParser';
+import RichTextParser from '../utils/RichTextParser';
 export default function TextBlock({heading,text,paddingtop,paddingbottom}) {
     return (
         <div className="textblock_wrap">

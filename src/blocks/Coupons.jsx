@@ -62,21 +62,28 @@ export default function Coupons({coupons}) {
                         })}
 
                 </div>
+                        {coupons ? (
                 <div className="dm_section">
-                <div className="dm_header vault">THIS WEEKS SPECIALS</div>
 
-                <div className="coupon_inner">
-                <div className="coupon_flex">
-                    {coupons.map(c=>{
-                        return (
-                            <div className="coupon_item">
-                                <img src={c.image.url}/>
-                            </div>
-                        )
-                    })}
-                </div>
+<div className="dm_header vault">THIS WEEKS SPECIALS</div>
+
+<div className="coupon_inner">
+<div className="coupon_flex">
+    {coupons.map(c=>{
+        return (
+            <div className="coupon_item">
+                <img src={c?.image?.url}/>
             </div>
-                </div>
+        )
+    })}
+</div>
+</div>
+
+</div>
+
+                        ):null
+                        }
+
                 <div className="dm_section">
                     <div className="dm_header vault">ALL DAY EVERY DAY DEALS</div>
                     <div className="dm_group" >

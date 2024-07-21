@@ -1,5 +1,5 @@
 import React, {useContext, useState} from 'react';
-import AppContext from '@/providers';
+import AppContext from '../providers';
 
 
 export default function VerticalBlocks({background}) {

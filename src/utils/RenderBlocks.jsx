@@ -1,4 +1,4 @@
-import { blocks } from "@/blocks/blockList";
+import { blocks } from "../blocks/blockList";
 import React from 'react';
 
 const RenderBlocks = ({layout}) => (

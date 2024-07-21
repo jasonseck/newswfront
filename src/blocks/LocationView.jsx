@@ -3,10 +3,10 @@
 import React, {useContext, useEffect,useState, useRef} from 'react';
 import Image from 'next/image';
 import {useSearchParams} from 'next/navigation';
-import AppContext from '@/providers';
+import AppContext from '../providers';
 import Map, { Marker, Popup, NavigationControl, GeolocateControl } from "react-map-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
-import logo from '@/img/Leaflylogo3.png'
+import logo from '../img/Leaflylogo3.png'
 import { useRouter } from 'next/router';
 const lmap = [
     "taos",

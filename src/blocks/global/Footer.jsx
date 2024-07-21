@@ -1,9 +1,9 @@
 import React, {useContext, useRef, useEffect} from 'react';
-import AppContext from '@/providers';
+import AppContext from '../../providers';
 
-import footer from '@/globalData/footer.json'
+import footer from '../../globalData/footer.json'
 import Link from 'next/link';
-import leaf from '@/img/Leaflylogo3.png'
+import leaf from '../../img/Leaflylogo3.png'
 export default function Footer() {
     const { location, setlocation, clearlocation, locationlist,openlist,closelist } = useContext(AppContext);
 

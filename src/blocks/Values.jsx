@@ -1,5 +1,5 @@
 import React, {useContext, useRef, useEffect} from 'react';
-import AppContext from '@/providers';
+import AppContext from '../providers';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 export default function Values({values,showbutton,buttontext,buttonlink}) {
