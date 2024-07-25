@@ -23,6 +23,7 @@ import Flower from './Flower';
 import Coupons from './Coupons';
 import ShopLoader from './ShopLoader';
 import PageHeader from './PageHeader';
+import FPDeals from './FPDeals';
 
 export const blocks = {
     "hero" : Hero,
@@ -49,5 +50,6 @@ export const blocks = {
     "flower":Flower,
     "coupons":Coupons,
     "shoploader":ShopLoader,
-    "pageheader":PageHeader
+    "pageheader":PageHeader,
+    "fpdeals":FPDeals
 }
